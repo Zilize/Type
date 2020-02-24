@@ -1,224 +1,435 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Annabella"><title>Botui · 灯火阑珊</title><meta name="description" content="点击提示语和我对话嗷 ੭ ᐕ)੭*⁾⁾
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="Annabella"><title>关于灯火阑珊处的初步介绍:-P · 灯火阑珊</title><meta name="description" content="Hello, World!欢迎来到灯火阑珊 | Arcadia，这是一个暂时的名字，如需了解请与机器人进行进一步的对话！全站使用Markdown进行编辑，更多细节请联系站点维护者！
+
     
-
-
-
-
-    var botui = new BotUI('my-botui-app');
-        botui.message.bot({ // show first message
-        delay: 200,
-        "><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 4.2.0"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">Arcadia</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">灯火阑珊</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li class="soc"></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="http://yoursite.com" rel="noopener noreferrer">Annabella</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>Botui</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2020-02-24</span></p><p class="post-abstract"><div>
-<link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css">
-<link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css">
-<div id="my-botui-app">
-    <center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="470" height="86" src="//music.163.com/outchain/player?type=2&amp;id=1297670613&amp;auto=0&amp;height=66"></iframe></center><br>
-    <center>点击提示语和我对话嗷 ੭ ᐕ)੭*⁾⁾</center><br>
-    <bot-ui></bot-ui>
-</div>
-<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
-<script src="https://unpkg.com/botui/build/botui.min.js"></script>
-<script>
-    var botui = new BotUI('my-botui-app');
-        botui.message.bot({ // show first message
-        delay: 200,
-        content: 'Hi，欢迎来到MoeCode研究所！😊'
-    }).then(() => {
-        return botui.message.bot({ // second one
-            delay: 1500, // wait 1 sec.
-            content: '我是Sum Chin :-P'
-        })
-    }).then(() => {
-        return botui.action.button({ // let user do something
-            delay: 1500,
-            action: [
-            {
-                text: '你好呀😝啥是MoeCode研究所呢？',
-                value: 'question'
-            }
-            ]
-        })
-    }).then(() => {
-        return botui.message.bot({
-            delay: 1500,
-            content: 'moe是日语里面的“萌”'
-        })
-    }).then(() => {
-        return botui.message.bot({
-            delay: 1500,
-            content: 'code代表我的专业计算机科学'
-        })
-    }).then(() => {
-        return botui.message.bot({
-            delay: 1500,
-            content: '因为喜欢番剧#日常#，所以叫自己的站点为研究所'
-        })
-    }).then(() => {
-        return botui.message.human({
-            delay: 1500,
-            content: '原来这样，我知道了！'
-        })
-    }).then(() => {
-        return botui.action.button({ // let user do something
-            delay: 1500,
-            action: [
-            {
-                text: '那你是谁呢？(°ー°〃)',
-                value: 'question'
-            },
-            {
-                text: '那我先滚啦～',
-                value: 'exit'
-            }
-            ]
-        })
-    }).then(res => {
-        if(res.value == 'question') {
+    
+    
+        点击提示语和我对话嗷 :-P
+        
+    
+    
+ "><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><meta name="generator" content="Hexo 4.2.0"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">Arcadia</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">灯火阑珊</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">Home</a></li><li><a href="/archives">Archive</a></li><li><a href="/tags">Tags</a></li><li class="soc"></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="http://yoursite.com" rel="noopener noreferrer">Annabella</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>关于灯火阑珊处的初步介绍:-P</a></p><p class="post-meta"><span class="date meta-item">Posted at&nbsp;2020-02-24</span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/Site/" title="Site" class="a-tag">Site</a><span>&nbsp;</span></span></p><p class="post-abstract"><h2 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello, World!"></a>Hello, World!</h2><p>欢迎来到灯火阑珊 | Arcadia，这是一个暂时的名字，如需了解请与机器人进行进一步的对话！全站使用Markdown进行编辑，更多细节请联系站点维护者！</p>
+<div>
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/botui/build/botui-theme-default.css">
+    <div id="my-botui-app">
+        <center>点击提示语和我对话嗷 :-P</center><br>
+        <bot-ui></bot-ui>
+    </div>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="https://unpkg.com/botui/build/botui.min.js"></script>
+    <script>
+        var botui = new BotUI('my-botui-app');
+            botui.message.bot({ // show first message
+            delay: 200,
+            content: 'Hi，欢迎来到灯火阑珊 | Arcadia！这里是你的博客 (雾'
+        }).then(() => {
+            return botui.message.bot({ // second one
+                delay: 1500, // wait 1 sec.
+                content: '哈哈啊哈 哈啊哈哈'
+            })
+        }).then(() => {
+            return botui.action.button({ // let user do something
+                delay: 1500,
+                action: [
+                {
+                    text: '为啥叫灯火阑珊嗷？🤔',
+                    value: 'question'
+                }
+                ]
+            })
+        }).then(() => {
             return botui.message.bot({
                 delay: 1500,
-                content: '我是华中科技幼儿园的一名本科生'
-            }).then(() => {
-                return botui.message.bot({
-                    delay: 1500,
-                    content: '喜欢捣鼓前端'
-                })
-            }).then(() => {
-                return botui.message.bot({
-                    delay: 1500,
-                    content: '但这只是课余时候弄弄！'
-                })
-            }).then(() => {
-                return botui.message.bot({
-                    delay: 1500,
-                    content: '我的目标可是星辰大海😎'
-                })
-            }).then(() => {
-                return botui.message.human({
-                    delay: 1500,
-                    content: '啊我不想聊学习qaq'
-                })
-            }).then(() => {
-                return botui.action.button({ // let user do something
-                    delay: 1500,
-                    action: [
-                    {
-                        text: '你有啥爱好呢？',
-                        value: 'question'
-                    }
-                    ]
-                })
-            }).then(() => {
-                return botui.message.bot({
-                    delay: 1500,
-                    content: '我超爱二次元音乐der'
-                })
-            }).then(() => {
-                return botui.message.bot({
-                    delay: 1500,
-                    content: '所以大一开始学琴，现在在练哈农和599'
-                })
-            }).then(() => {
-                return botui.message.bot({
-                    delay: 1500,
-                    content: '还有我是Animenzzz的粉丝！'
-                })
-            }).then(() => {
-                return botui.action.button({ // let user do something
-                    delay: 1500,
-                    action: [
-                    {
-                        text: '还有呢？',
-                        value: 'then'
-                    },
-                    {
-                        text: '哇我也是！',
-                        value: 'yes'
-                    }
-                    ]
-                })
-            }).then(res => {
-                if(res.value == 'then') {
-                    return botui.message.bot({
-                        delay: 1500,
-                        content: '摄影、画画、平面设计都喜欢一点'
-                    }).then(() => {
-                        return botui.message.bot({
-                            delay: 1500,
-                            content: '但是都很菜😅'
-                        })
-                    }).then(() => {
-                        return botui.action.button({ // let user do something
-                            delay: 1500,
-                            action: [
-                            {
-                                text: '那你加油噢！我去其他地方逛逛😃',
-                                value: 'question'
-                            }
-                            ]
-                        })
-                    }).then(() => {
-                        return botui.message.bot({
-                            delay: 1500,
-                            content: '玩得开心～再见👋'
-                        })
-                    })
-                }
-                else {
-                    return botui.message.bot({
-                        delay: 1500,
-                        content: '哇！那我想认识你w'
-                    }).then(() => {
-                        return botui.message.bot({
-                            delay: 1500,
-                            content: '这是我的企鹅号137 366 871'
-                        })
-                    }).then(() => {
-                        return botui.action.button({ // let user do something
-                            delay: 1500,
-                            action: [
-                            {
-                                text: '那俺考虑一下！',
-                                value: 'then'
-                            },
-                            {
-                                text: '木得问题～',
-                                value: 'yes'
-                            }
-                            ]
-                        }).then(res => {
-                            if(res.value == 'then') {
-                                return botui.message.bot({
-                                    delay: 1500,
-                                    content: 'Good Bye 👋'
-                                }).then(() => {
-                                    return botui.message.human({
-                                        delay: 1500,
-                                        content: '再见！'
-                                    })
-                                })
-                            }
-                            else {
-                                return botui.message.bot({
-                                    delay: 1500,
-                                    content: '等你消息！Bye 👋'
-                                }).then(() => {
-                                    return botui.message.human({
-                                        delay: 1500,
-                                        content: "再见嘞 👋"
-                                    })
-                                })
-                            }
-                        })
-                    })
-                }
+                content: '古今之成大事业、大学问者，必经过三种之境界！'
             })
-        }
-        else {
-            return botui.message.bot({
+        }).then(() => {
+            return botui.message.human({
                 delay: 1500,
-                content: '欢迎再次光临嗷੭ ᐕ)੭*⁾⁾'
+                content: '不用说了✋我知道了！'
             })
-        }
+        }).then(() => {
+            return botui.action.button({ // let user do something
+                delay: 1500,
+                action: [
+                {
+                    text: '突然又忘记了！你还是说说叭…',
+                    value: 'question'
+                },
+                {
+                    text: '那Arcadia呢？',
+                    value: 'next'
+                }
+                ]
+            })
+        }).then(res => {
+            if(res.value == 'question') {
+                return botui.message.bot({
+                    delay: 1500,
+                    content: '众里寻他千百度，蓦然回首，那人却在，灯火阑珊处。'
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '这是第三重境界嘛～做学问以最高境界为目标！'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '取“灯火阑珊”四字虽有点断章取义'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '不过你尽可以把它视作双关  雾'
+                    })
+                }).then(() => {
+                    return botui.action.button({ // let user do something
+                        delay: 1500,
+                        action: [
+                        {
+                            text: '啥子双关？😅',
+                            value: 'question'
+                        }
+                        ]
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '这里是一个人烟稀少的地方'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '因为反正没有多少人来看的👀'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '哈哈啊哈'
+                    })
+                }).then(() => {
+                    return botui.action.button({ // let user do something
+                        delay: 1500,
+                        action: [
+                        {
+                            text: '还没问完！那Arcadia呢？',
+                            value: 'question'
+                        }
+                        ]
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '词典上查一下“世外桃源”就有arcadia了 雾'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '取自希腊神话，但我觉得灯火阑珊和世外桃源都差不多'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '所以就当作译名了😄'
+                    })
+                }).then(() => {
+                    return botui.action.button({ // let user do something
+                        delay: 1500,
+                        action: [
+                        {
+                            text: '所以这里到底有啥用？👀',
+                            value: 'question'
+                        }
+                        ]
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '放……你的诗歌啊'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '所以才问了你的英文名'
+                    })
+                }).then(() => {
+                    return botui.message.human({
+                        delay: 1500,
+                        content: '嘶'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '所以这个站点好看吗？'
+                    })
+                }).then(() => {
+                    return botui.action.button({ // let user do something
+                        delay: 1500,
+                        action: [
+                        {
+                            text: '不好看',
+                            value: 'no'
+                        },
+                        {
+                            text: '还🉑️',
+                            value: 'yup'
+                        }
+                        ]
+                    })
+                }).then(res => {
+                    if(res.value == 'no') {
+                        return botui.message.bot({
+                            delay: 1500,
+                            content: '那打扰了'
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '本站点将于3秒后自动销毁'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1000,
+                                content: '3'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1000,
+                                content: '2'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1000,
+                                content: '1'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1000,
+                                content: 'Boom!'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '哈哈哈骗人的  雾'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '还没那么大本事'
+                            })
+                        }).then(() => {
+                            return botui.message.human({
+                                delay: 1500,
+                                content: '😓'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '告诉Zilize让他手动销毁吧！'
+                            })
+                        }).then(() => {
+                            return botui.action.button({ // let user do something
+                                delay: 1500,
+                                action: [
+                                {
+                                    text: '可以',
+                                    value: 'ans1'
+                                },
+                                {
+                                    text: '没问题',
+                                    value: 'ans2'
+                                },
+                                {
+                                    text: '我这就告诉他',
+                                    value: 'ans3'
+                                }
+                                ]
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: 'Good bye!'
+                            })
+                        }).then(() => {
+                            return botui.message.human({
+                                delay: 1500,
+                                content: 'Good bye!'
+                            })
+                        })
+                    }
+                    else {
+                        return botui.message.bot({
+                            delay: 1500,
+                            content: '谢谢你的欣赏！'
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '祝你玩得开心！再见👋'
+                            })
+                        }).then(() => {
+                            return botui.message.human({
+                                delay: 1500,
+                                content: '再见嘞👋'
+                            })
+                        })
+                    }
+                })
+            }
+            else {
+                return botui.message.bot({
+                    delay: 1500,
+                    content: '词典上查一下“世外桃源”就有arcadia了 雾'
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '取自希腊神话，但我觉得灯火阑珊和世外桃源都差不多'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '所以就当作译名了😄'
+                    })
+                }).then(() => {
+                    return botui.action.button({ // let user do something
+                        delay: 1500,
+                        action: [
+                        {
+                            text: '所以这里到底有啥用？👀',
+                            value: 'question'
+                        }
+                        ]
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '放……你的诗歌啊'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '所以才问了你的英文名'
+                    })
+                }).then(() => {
+                    return botui.message.human({
+                        delay: 1500,
+                        content: '嘶'
+                    })
+                }).then(() => {
+                    return botui.message.bot({
+                        delay: 1500,
+                        content: '所以这个站点好看吗？'
+                    })
+                }).then(() => {
+                    return botui.action.button({ // let user do something
+                        delay: 1500,
+                        action: [
+                        {
+                            text: '不好看',
+                            value: 'no'
+                        },
+                        {
+                            text: '还🉑️',
+                            value: 'yup'
+                        }
+                        ]
+                    })
+                }).then(res => {
+                    if(res.value == 'no') {
+                        return botui.message.bot({
+                            delay: 1500,
+                            content: '那打扰了'
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '本站点将于3秒后自动销毁'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1000,
+                                content: '3'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1000,
+                                content: '2'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1000,
+                                content: '1'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1000,
+                                content: 'Boom!'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '哈哈哈骗人的  雾'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '还没那么大本事'
+                            })
+                        }).then(() => {
+                            return botui.message.human({
+                                delay: 1500,
+                                content: '😓'
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '告诉Zilize让他手动销毁吧！'
+                            })
+                        }).then(() => {
+                            return botui.action.button({ // let user do something
+                                delay: 1500,
+                                action: [
+                                {
+                                    text: '可以',
+                                    value: 'ans1'
+                                },
+                                {
+                                    text: '没问题',
+                                    value: 'ans2'
+                                },
+                                {
+                                    text: '我这就告诉他',
+                                    value: 'ans3'
+                                }
+                                ]
+                            })
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: 'Good bye!'
+                            })
+                        }).then(() => {
+                            return botui.message.human({
+                                delay: 1500,
+                                content: 'Good bye!'
+                            })
+                        })
+                    }
+                    else {
+                        return botui.message.bot({
+                            delay: 1500,
+                            content: '谢谢你的欣赏！'
+                        }).then(() => {
+                            return botui.message.bot({
+                                delay: 1500,
+                                content: '祝你玩得开心！再见👋'
+                            })
+                        }).then(() => {
+                            return botui.message.human({
+                                delay: 1500,
+                                content: '再见嘞👋'
+                            })
+                        })
+                    }
+                })
+
+<pre><code>        }
     })
-</script>
-</div>
-</p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=http://yoursite.com/2020/Botui/%20灯火阑珊%20Botui" target="_blank" rel="noopener" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/2020/hello-world/" title="Hello World">Next post: Hello World&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="http://yoursite.com" rel="noopener noreferrer">Annabella</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
+&lt;/script&gt;</code></pre></div>
+</p></div><div class="share"><span>Share</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=http://yoursite.com/2020/Botui/%20灯火阑珊%20关于灯火阑珊处的初步介绍:-P" target="_blank" rel="noopener" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"></p></div></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2020&nbsp;<a target="_blank" href="http://yoursite.com" rel="noopener noreferrer">Annabella</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
