@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-26T15:32:28.762Z</updated>
+  <updated>2020-03-02T10:01:13.576Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>雨霖铃·晚来风漏</title>
+    <link href="http://yoursite.com/2020/poetry4/"/>
+    <id>http://yoursite.com/2020/poetry4/</id>
+    <published>2020-03-02T10:00:23.000Z</published>
+    <updated>2020-03-02T10:01:13.576Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="雨霖铃"><a href="#雨霖铃" class="headerlink" title="雨霖铃"></a>雨霖铃</h3><p>晚来风漏，叶鸣烛微，容颜孱瘦。</p><p>何时三甲夺首，曲江宴饮，并辔轻走。</p><p>雁塔诗长安花，是才子称秀。</p><p>寒雨至，清梦暗逝，曲终唯留书卷皱。</p><p>看遥山恰对帘钩，销云痕，散作清风愁。</p><p>无形有痕心头，任凭它，苦尽凉透。</p><p>唯有南山，却遗明月，好景依旧。</p><p>称得扁舟翠浪里，又何来俗世愁。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;雨霖铃&quot;&gt;&lt;a href=&quot;#雨霖铃&quot; class=&quot;headerlink&quot; title=&quot;雨霖铃&quot;&gt;&lt;/a&gt;雨霖铃&lt;/h3&gt;&lt;p&gt;晚来风漏，叶鸣烛微，容颜孱瘦。&lt;/p&gt;
+&lt;p&gt;何时三甲夺首，曲江宴饮，并辔轻走。&lt;/p&gt;
+&lt;p&gt;雁塔诗长安花，是才子称秀。&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>醒时云销雨霁</title>
